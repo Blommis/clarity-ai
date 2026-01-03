@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}ClarityAI – SEO & AI Analysis{% endblock %}
+
+{% block content %}
+<section id="hero-section">
+    <h1>Analyze your website</h1>
+    <p>
+        Get clear SEO and AI-readiness recommendations for any URL.
+    </p>
+
+    <form id="analyze-form" class="mt-4">
+    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-stretch">
+        <input
+            type="url"
+            class="form-control form-control-lg rounded-pill analyze-input"
+            placeholder="https://example.com"
+            required
+        >
+        <button class="btn btn-dark btn-lg rounded-pill px-4">
+            Analyze
+        </button>
+    </div>
+</form>
+
+
+</section>
+{% endblock %}
