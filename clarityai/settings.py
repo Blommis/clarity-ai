@@ -28,12 +28,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
-SECRET_KEY = os.environ.get("DATABASE_URL")
+DATABASE_URL = os.environ.get("DATABASE_URL")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com', '.127.0.0.1',]
+ALLOWED_HOSTS = ['.herokuapp.com', '.127.0.0.1', 'localhost']
 
 
 
@@ -93,8 +93,7 @@ WSGI_APPLICATION = 'clarityai.wsgi.application'
 # }
 
 DATABASES = {
-'default':
-dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
@@ -133,6 +132,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
