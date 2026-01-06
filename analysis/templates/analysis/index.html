@@ -1,8 +1,10 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}ClarityAI – SEO & AI Analysis{% endblock %}
 
 {% block content %}
+<!--hero secttion-->
 <section id="hero-section">
     <h1>Analyze your website</h1>
     <p>
@@ -22,7 +24,87 @@
         </button>
     </div>
 </form>
-
-
 </section>
+<!--hero secttion ends-->
+<!--dashboard info section-->
+<h2 class="header-about-dashboard-section">From visibility to understanding and action</h2>
+<section id="about-dashboard">
+    <div class="dashboard-text">
+        <h2 class="number-heading">1.</h2>
+        <h2>Are you the source for the AI enginges?</h2>
+        <p>
+            Take control of your business and be the number 1 source for the AI enginges. 
+            ClarityAI helps you understand whether your website is seen as a reliable source 
+            and explains exactly why you are, or are not, visible in AI-generated answers.
+        </p>
+        <h2 class="number-heading">2.</h2>
+        <h2>ClarityAI shows you WHY behind WHAT</h2>
+        <p>
+            Numbers alone don’t explain visibility in AI-driven search.
+            ClarityAI translates data into understanding, helping you anticipate what your audience
+            is asking — before AI engines decide which sources to surface.
+        </p>
+        <h2 class="number-heading">3.</h2>
+        <h2>Turn insights into clear actions</h2>
+        <p>
+            ClarityAI doesn’t stop at analysis. You get concrete, prioritised recommendations
+            that show exactly what to improve — so you can take action with confidence and
+            move faster than competitors still guessing.
+        </p>
+
+    </div>
+    <div class="dashboard-image-wrapper">
+        <img src="{% static 'images/beta-dashboard-image.jpg' %}" alt="" class="dashboard-image">
+    </div>
+</section>
+<!--dashboard info section end-->
+
+<!--Benefits section -->
+<section id="clarity-benefits">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">
+            Why choose ClarityAI
+        </h2>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>AI-first insights</h3>
+                <p>
+                    Understand how AI engines interpret your content and decide which
+                    sources to surface in generated answers.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Actionable recommendations</h3>
+                <p>
+                    Go beyond metrics. Get clear, prioritised actions that show
+                    exactly what to improve and why it matters.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Explain the “why”</h3>
+                <p>
+                    See the reasoning behind visibility changes instead of guessing
+                    based on surface-level data.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Move faster than competitors</h3>
+                <p>
+                    Identify opportunities earlier and adapt your content strategy
+                    before competitors react.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Benefits section ends -->
 {% endblock %}
